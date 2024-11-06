@@ -1,0 +1,594 @@
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc history.c
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o: in function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.26/csu/../sysdeps/x86_64/start.S:110: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc history.c
+history.c: In function ‘print_history’:
+history.c:59:4: error: expected expression before ‘Item’
+   *Item curr = history->root;
+    ^~~~
+history.c:60:7: error: ‘curr’ undeclared (first use in this function); did you mean ‘char’?
+   if (curr == NULL) {
+       ^~~~
+       char
+history.c:60:7: note: each undeclared identifier is reported only once for each function it appears in
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc history.c
+history.c: In function ‘print_history’:
+history.c:59:16: error: ‘history’ undeclared (first use in this function)
+   Item *curr = history->root;
+                ^~~~~~~
+history.c:59:16: note: each undeclared identifier is reported only once for each function it appears in
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc history.c
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o: in function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.26/csu/../sysdeps/x86_64/start.S:110: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+tokenizer.c:68:14: error: empty character constant
+       stri = '';
+              ^~
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> cc history.c
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o: in function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.26/csu/../sysdeps/x86_64/start.S:110: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc -o history history.c scd.o data_proc.o -lm -fopenmp
+gcc: error: scd.o: No such file or directory
+gcc: error: data_proc.o: No such file or directory
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc -o history history.c -lm -fopenmp
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o: in function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.26/csu/../sysdeps/x86_64/start.S:110: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc history.c
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+tokenizer.c:68:14: error: empty character constant
+       stri = '';
+              ^~
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o: in function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.26/csu/../sysdeps/x86_64/start.S:110: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:68:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:68:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       tokens[ind] = (char *)stri;
+                     ^
+tokenizer.c:68:19: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+       tokens[ind] = (char *)stri;
+                   ^
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc history.c
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:68:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+uimain.c: In function ‘main’:
+uimain.c:11:3: error: unknown type name ‘s_List’; use ‘struct’ keyword to refer to the type
+   s_List list = init_history();
+   ^~~~~~
+   struct 
+uimain.c:11:17: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+   s_List list = init_history();
+                 ^~~~~~~~~~~~
+uimain.c:12:13: warning: comparison between pointer and integer
+   if (token == "history") {
+             ^~
+uimain.c:13:19: warning: passing argument 1 of ‘print_history’ makes pointer from integer without a cast [-Wint-conversion]
+     print_history(list);
+                   ^~~~
+In file included from uimain.c:2:0:
+history.h:29:6: note: expected ‘List * {aka struct s_List *}’ but argument is of type ‘int’
+ void print_history(List *list);
+      ^~~~~~~~~~~~~
+uimain.c:15:13: warning: comparison between pointer and integer
+   if (token == "!", a) {
+             ^~
+uimain.c:15:21: error: ‘a’ undeclared (first use in this function)
+   if (token == "!", a) {
+                     ^
+uimain.c:15:21: note: each undeclared identifier is reported only once for each function it appears in
+uimain.c:16:18: warning: passing argument 1 of ‘get_history’ makes pointer from integer without a cast [-Wint-conversion]
+     *get_history(list, a);
+                  ^~~~
+In file included from uimain.c:2:0:
+history.h:26:7: note: expected ‘List * {aka struct s_List *}’ but argument is of type ‘int’
+ char *get_history(List *list, int id);
+       ^~~~~~~~~~~
+uimain.c:19:15: warning: passing argument 1 of ‘add_history’ makes pointer from integer without a cast [-Wint-conversion]
+   add_history(list, token);
+               ^~~~
+In file included from uimain.c:2:0:
+history.h:21:6: note: expected ‘List * {aka struct s_List *}’ but argument is of type ‘int’
+ void add_history(List *list, char *str);
+      ^~~~~~~~~~~
+uimain.c:19:21: warning: passing argument 2 of ‘add_history’ makes pointer from integer without a cast [-Wint-conversion]
+   add_history(list, token);
+                     ^~~~~
+In file included from uimain.c:2:0:
+history.h:21:6: note: expected ‘char *’ but argument is of type ‘char’
+ void add_history(List *list, char *str);
+      ^~~~~~~~~~~
+uimain.c:21:14: warning: passing argument 1 of ‘tokenize’ makes pointer from integer without a cast [-Wint-conversion]
+   **tokenize(token);
+              ^~~~~
+In file included from uimain.c:1:0:
+tokenizer.h:72:8: note: expected ‘char *’ but argument is of type ‘char’
+ char **tokenize(char* str);
+        ^~~~~~~~
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:68:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+In file included from uimain.c:2:0:
+history.c: At top level:
+history.c:8:5: error: redefinition of ‘main’
+ int main() {}
+     ^~~~
+In file included from uimain.c:1:0:
+tokenizer.c:4:5: note: previous definition of ‘main’ was here
+ int main() {}
+     ^~~~
+uimain.c:5:6: error: conflicting types for ‘main’
+ char main() {
+      ^~~~
+In file included from uimain.c:1:0:
+tokenizer.c:4:5: note: previous definition of ‘main’ was here
+ int main() {}
+     ^~~~
+uimain.c: In function ‘main’:
+uimain.c:14:13: warning: comparison between pointer and integer
+   if (token == "history") {
+             ^~
+uimain.c:18:13: warning: comparison between pointer and integer
+   if (token == "!") {
+             ^~
+uimain.c:23:21: warning: passing argument 2 of ‘add_history’ makes pointer from integer without a cast [-Wint-conversion]
+   add_history(list, token);
+                     ^~~~~
+In file included from history.c:1:0,
+                 from uimain.c:2:
+history.h:21:6: note: expected ‘char *’ but argument is of type ‘char’
+ void add_history(List *list, char *str);
+      ^~~~~~~~~~~
+uimain.c:25:14: warning: passing argument 1 of ‘tokenize’ makes pointer from integer without a cast [-Wint-conversion]
+   **tokenize(token);
+              ^~~~~
+In file included from uimain.c:1:0:
+tokenizer.c:61:8: note: expected ‘char *’ but argument is of type ‘char’
+ char **tokenize(char* str) {
+        ^~~~~~~~
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:68:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+In file included from uimain.c:2:0:
+history.c: At top level:
+history.c:8:5: error: redefinition of ‘main’
+ int main() {}
+     ^~~~
+In file included from uimain.c:1:0:
+tokenizer.c:4:5: note: previous definition of ‘main’ was here
+ int main() {}
+     ^~~~
+uimain.c:5:6: error: conflicting types for ‘main’
+ char main() {
+      ^~~~
+In file included from uimain.c:1:0:
+tokenizer.c:4:5: note: previous definition of ‘main’ was here
+ int main() {}
+     ^~~~
+uimain.c: In function ‘main’:
+uimain.c:10:15: error: ‘tok’ undeclared (first use in this function); did you mean ‘token’?
+   scanf("%d", tok);
+               ^~~
+               token
+uimain.c:10:15: note: each undeclared identifier is reported only once for each function it appears in
+uimain.c:11:9: error: conflicting types for ‘token’
+   char *token = tok;
+         ^~~~~
+uimain.c:7:8: note: previous declaration of ‘token’ was here
+   char token;
+        ^~~~~
+uimain.c:20:24: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list, token);
+                        ^~~~~
+In file included from uimain.c:2:0:
+history.c:49:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:68:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+In file included from uimain.c:2:0:
+history.c: At top level:
+history.c:8:6: error: redefinition of ‘main’
+ char main() {}
+      ^~~~
+In file included from uimain.c:1:0:
+tokenizer.c:4:6: note: previous definition of ‘main’ was here
+ char main() {}
+      ^~~~
+uimain.c:5:6: error: redefinition of ‘main’
+ char main() {
+      ^~~~
+In file included from uimain.c:1:0:
+tokenizer.c:4:6: note: previous definition of ‘main’ was here
+ char main() {}
+      ^~~~
+uimain.c: In function ‘main’:
+uimain.c:10:15: error: ‘tok’ undeclared (first use in this function); did you mean ‘token’?
+   scanf("%d", tok);
+               ^~~
+               token
+uimain.c:10:15: note: each undeclared identifier is reported only once for each function it appears in
+uimain.c:11:9: error: conflicting types for ‘token’
+   char *token = tok;
+         ^~~~~
+uimain.c:7:8: note: previous declaration of ‘token’ was here
+   char token;
+        ^~~~~
+uimain.c:20:24: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list, token);
+                        ^~~~~
+In file included from uimain.c:2:0:
+history.c:49:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:68:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: At top level:
+uimain.c:5:6: error: redefinition of ‘main’
+ char main() {
+      ^~~~
+In file included from uimain.c:1:0:
+tokenizer.c:4:6: note: previous definition of ‘main’ was here
+ char main() {}
+      ^~~~
+uimain.c: In function ‘main’:
+uimain.c:10:15: error: ‘tok’ undeclared (first use in this function); did you mean ‘token’?
+   scanf("%d", tok);
+               ^~~
+               token
+uimain.c:10:15: note: each undeclared identifier is reported only once for each function it appears in
+uimain.c:11:9: error: conflicting types for ‘token’
+   char *token = tok;
+         ^~~~~
+uimain.c:7:8: note: previous declaration of ‘token’ was here
+   char token;
+        ^~~~~
+uimain.c:20:24: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list, token);
+                        ^~~~~
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: In function ‘main’:
+uimain.c:10:15: error: ‘tok’ undeclared (first use in this function); did you mean ‘token’?
+   scanf("%d", tok);
+               ^~~
+               token
+uimain.c:10:15: note: each undeclared identifier is reported only once for each function it appears in
+uimain.c:11:9: error: conflicting types for ‘token’
+   char *token = tok;
+         ^~~~~
+uimain.c:7:8: note: previous declaration of ‘token’ was here
+   char token;
+        ^~~~~
+uimain.c:20:24: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list, token);
+                        ^~~~~
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: In function ‘main’:
+uimain.c:11:17: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *token = tok;
+                 ^~~
+uimain.c:20:24: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list, token);
+                        ^~~~~
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccnwVTif.o: in function `main':
+uimain.c:(.text+0x371): undefined reference to `add_history'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: In function ‘main’:
+uimain.c:20:24: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list, token);
+                        ^~~~~
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccP8DKqV.o: in function `main':
+uimain.c:(.text+0x373): undefined reference to `add_history'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: In function ‘main’:
+uimain.c:11:17: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char* token = tok;
+                 ^~~
+uimain.c:20:24: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list, token);
+                        ^~~~~
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccIJlDfr.o: in function `main':
+uimain.c:(.text+0x371): undefined reference to `add_history'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: In function ‘main’:
+uimain.c:11:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   char* token = (char *)tok;
+                 ^
+uimain.c:20:24: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list, token);
+                        ^~~~~
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccqVYsS8.o: in function `main':
+uimain.c:(.text+0x371): undefined reference to `add_history'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: In function ‘main’:
+uimain.c:11:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   char* token = (char *)tok;
+                 ^
+uimain.c:20:23: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list,(char *)token);
+                       ^
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccw9GHzI.o: in function `main':
+uimain.c:(.text+0x371): undefined reference to `add_history'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> gcc uimain.c history.c tokenizer.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: In function ‘main’:
+uimain.c:11:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   char* token = (char *)tok;
+                 ^
+uimain.c:20:23: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list,(char *)token);
+                       ^
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccinwl4T.o: in function `init_history':
+history.c:(.text+0x0): multiple definition of `init_history'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x205): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccinwl4T.o: in function `get_history':
+history.c:(.text+0x30): multiple definition of `get_history'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x235): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccinwl4T.o: in function `print_history':
+history.c:(.text+0x68): multiple definition of `print_history'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x26d): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccinwl4T.o: in function `free_history':
+history.c:(.text+0xca): multiple definition of `free_history'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x2cf): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccNJzgbf.o: in function `space_char':
+tokenizer.c:(.text+0x0): multiple definition of `space_char'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x0): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccNJzgbf.o: in function `non_space_char':
+tokenizer.c:(.text+0x23): multiple definition of `non_space_char'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x23): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccNJzgbf.o: in function `token_start':
+tokenizer.c:(.text+0x46): multiple definition of `token_start'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x46): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccNJzgbf.o: in function `count_tokens':
+tokenizer.c:(.text+0x8e): multiple definition of `count_tokens'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x8e): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccNJzgbf.o: in function `copy_str':
+tokenizer.c:(.text+0xd8): multiple definition of `copy_str'; /tmp/ccDcXs7y.o:uimain.c:(.text+0xd8): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccNJzgbf.o: in function `tokenize':
+tokenizer.c:(.text+0x121): multiple definition of `tokenize'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x121): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccNJzgbf.o: in function `print_tokens':
+tokenizer.c:(.text+0x195): multiple definition of `print_tokens'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x195): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccNJzgbf.o: in function `free_tokens':
+tokenizer.c:(.text+0x1d4): multiple definition of `free_tokens'; /tmp/ccDcXs7y.o:uimain.c:(.text+0x1d4): first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccDcXs7y.o: in function `main':
+uimain.c:(.text+0x371): undefined reference to `add_history'
+collect2: error: ld returned 1 exit status
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+cc -g -O3   -c -o tester.o tester.c
+tester.c: In function ‘test_string_length’:
+tester.c:24:46: warning: implicit declaration of function ‘string_length’; did you mean ‘test_string_length’? [-Wimplicit-function-declaration]
+     mu_assert("string_length('happy') == 5", string_length("happy") == 5);
+                                              ^
+tester.c:16:46: note: in definition of macro ‘mu_assert’
+  #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
+                                              ^~~~
+tester.c: In function ‘test_is_valid_character’:
+tester.c:28:47: warning: implicit declaration of function ‘is_valid_character’; did you mean ‘test_is_valid_character’? [-Wimplicit-function-declaration]
+     mu_assert("is_valid_character(' ') == 0", is_valid_character(' ') == 0);
+                                               ^
+tester.c:16:46: note: in definition of macro ‘mu_assert’
+  #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
+                                              ^~~~
+tester.c: In function ‘test_find_word_start’:
+tester.c:35:57: warning: implicit declaration of function ‘find_word_start’; did you mean ‘test_find_word_start’? [-Wimplicit-function-declaration]
+     mu_assert("find_word_start('  happy') == &str[2]'", find_word_start(str) == &str[2]);
+                                                         ^
+tester.c:16:46: note: in definition of macro ‘mu_assert’
+  #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
+                                              ^~~~
+tester.c:35:78: warning: comparison between pointer and integer
+     mu_assert("find_word_start('  happy') == &str[2]'", find_word_start(str) == &str[2]);
+                                                                              ^
+tester.c:16:46: note: in definition of macro ‘mu_assert’
+  #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
+                                              ^~~~
+tester.c: In function ‘test_find_word_terminator’:
+tester.c:41:66: warning: implicit declaration of function ‘find_word_terminator’; did you mean ‘test_find_word_terminator’? [-Wimplicit-function-declaration]
+     mu_assert("find_word_terminator('happy joy') == &str[5]' '", find_word_terminator(str) == &str[5]);
+                                                                  ^
+tester.c:16:46: note: in definition of macro ‘mu_assert’
+  #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
+                                              ^~~~
+tester.c:41:92: warning: comparison between pointer and integer
+ mu_assert("find_word_terminator('happy joy') == &str[5]' '", find_word_terminator(str) == &str[5]);
+                                                                                        ^
+tester.c:16:46: note: in definition of macro ‘mu_assert’
+  #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
+                                              ^~~~
+tester.c:42:86: warning: comparison between pointer and integer
+     mu_assert("find_word_terminator(emptyStr) == empty", find_word_terminator(empty) == empty);
+                                                                                      ^
+tester.c:16:46: note: in definition of macro ‘mu_assert’
+  #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
+                                              ^~~~
+tester.c: In function ‘test_count_words’:
+tester.c:48:58: warning: implicit declaration of function ‘count_words’; did you mean ‘count_tokens’? [-Wimplicit-function-declaration]
+     mu_assert("count_words('happy happy joy joy') == 4", count_words(str) == 4);
+                                                          ^
+tester.c:16:46: note: in definition of macro ‘mu_assert’
+  #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
+                                              ^~~~
+cc -g -O3   -c -o history.o history.c
+cc -g -O3   -c -o uimain.o uimain.c
+In file included from uimain.c:1:0:
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       tokens[ind] = stri;
+                   ^
+uimain.c: In function ‘main’:
+uimain.c:11:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   char* token = (char *)tok;
+                 ^
+uimain.c:20:23: warning: passing argument 2 of ‘get_history’ makes integer from pointer without a cast [-Wint-conversion]
+     *get_history(list,(char *)token);
+                       ^
+In file included from uimain.c:2:0:
+history.c:48:7: note: expected ‘int’ but argument is of type ‘char *’
+ char *get_history(List *list, int id) {
+       ^~~~~~~~~~~
+cc -o tokenizer -g -O3 tokenizer.o tester.o history.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `space_char':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:5: multiple definition of `space_char'; tokenizer.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:5: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `non_space_char':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:14: multiple definition of `non_space_char'; tokenizer.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:14: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `token_start':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:22: multiple definition of `token_start'; tokenizer.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:22: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `count_tokens':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:35: multiple definition of `count_tokens'; tokenizer.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:35: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `copy_str':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:49: multiple definition of `copy_str'; tokenizer.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:49: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `tokenize':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:64: multiple definition of `tokenize'; tokenizer.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:64: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `print_tokens':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:76: multiple definition of `print_tokens'; tokenizer.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:76: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `free_tokens':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:83: multiple definition of `free_tokens'; tokenizer.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tokenizer.c:83: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `init_history':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/history.c:9: multiple definition of `init_history'; history.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/history.c:9: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `get_history':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/history.c:49: multiple definition of `get_history'; history.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/history.c:49: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `print_history':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/history.c:59: multiple definition of `print_history'; history.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/history.c:59: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `free_history':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/history.c:80: multiple definition of `free_history'; history.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/history.c:80: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `main':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/uimain.c:5: multiple definition of `main'; tester.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:99: first defined here
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tester.o: in function `test_string_length':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:24: undefined reference to `string_length'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tester.o: in function `test_is_valid_character':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:28: undefined reference to `is_valid_character'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:29: undefined reference to `is_valid_character'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tester.o: in function `test_find_word_start':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:35: undefined reference to `find_word_start'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tester.o: in function `test_find_word_terminator':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:41: undefined reference to `find_word_terminator'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:42: undefined reference to `find_word_terminator'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tester.o: in function `test_count_words':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:48: undefined reference to `count_words'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tester.o: in function `test_add_history':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:66: undefined reference to `add_history'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:68: undefined reference to `add_history'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tester.o: in function `test_get_history':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/tester.c:75: undefined reference to `add_history'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `main':
+/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/uimain.c:24: undefined reference to `add_history'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/uimain.c:24: undefined reference to `add_history'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o:/home/student/corg/f24-corg-tokenizer-J-Coder-pixel/src/uimain.c:24: more undefined references to `add_history' follow
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:8: tokenizer] Error 1
+student@systems-vm:~/corg/f24-corg-tokenizer-J-Coder-pixel/src> 

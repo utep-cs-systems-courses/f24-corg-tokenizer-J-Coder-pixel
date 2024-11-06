@@ -1,26 +1,54 @@
 #include "tokenizer.h"
 #include "history.h"
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-char main() {
+#define limit 100
 
-  char token;
+void main(void) {
 
-  printf("$ \n");
-  scanf("%d", token);
-  //s_List list = init_history();
-  /* if (token == "history") {
+  char input[limit];
+  List* history = init_history();
+  char** tok;
+
+  while(*input != 't') {
+    printf("&");
+    fgets(input, limit, stdin);
+    printf("\n");
+
+    if(*input != '!') {
+      printf("String: %s", &input);
+      tok = tokenize(input);
+      printf("Tokenized version:\n");
+      print_tokens(tok);
+      add_history(history,input);
+    }
+    else {
+      printf("All inputed Strings:\n");
+      print_history(history);
+    }
+  }
+  free_tokens(tok);
+  free_history(history);
+  printf("Exiting program...");
+}
+      /*     
+  if (token == "history") {
     print_history(list);
   }
-  if (token == "!", a) {
-    *get_history(list, a);
+  
+  if (token == "!") {
+    *get_history(list,(char *)token);
   }
-  printf("Token: %d", token);
-  add_history(list, token);
+  
+  printf("Token: %d",token);
+  add_history(list,(char *)token);
 
-  **tokenize(token); */
+  **tokenize(token);
   
 
  done:
   return 0;
 }
+*/

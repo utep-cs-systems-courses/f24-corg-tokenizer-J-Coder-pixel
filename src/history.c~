@@ -4,12 +4,8 @@
 
 /* Initialize the linked list to keep the history. */
 
-
 List* init_history() {
-  List *history = malloc(sizeof(List));
-  history->root = malloc(sizeof(Item));;
-
-  return history;
+  List *history;
   
 }
 
@@ -22,20 +18,33 @@ List* init_history() {
    char* str - the string to store
 
 */
-void add_history(List *list, char *str) {
-  int i = 1;
-  Item *item = list->root;
-  while (item) {
-    i++;
-    item = item->next;
-  }
-  
-  item = malloc(sizeof(Item));
-  item->id = i;
-  item->str = str;
 
-  printf("Done.");
+void add_history(List *list, char *str) {
+  int i = 0;
+  while (list->root != NULL) {
+    i++;
+    list->root->next;
+  }
+    
+  Item *item = malloc(sizeof(Item));
+  if(item == NULL) {
+    printf("No memory.");
+    exit(1);
+  }
+  item->id = i;
+  item->str = *str;
+
+  if(!list->root) {
+    list = (List*) item;
+    list->root = (List*) item;
+  }
+  else {
+    list->s_Item->next = item;
+    list->Item = item;
+  }
 }
+
+
 
 /* Retrieve the string stored in the node where Item->id == id.
 
@@ -55,18 +64,10 @@ char *get_history(List *list, int id) {
 /*Print the entire contents of the list. */
 
 void print_history(List *list) {
-  Item *curr = list->root;
-  if (curr == NULL) {
-    printf("This list is empty.");
+  while(list->root != NULL) {
+    printf(list->root->str);
+    list->root->next;
   }
-  else {
-    while (curr) {
-      printf("%d: %s\n", curr->id, curr->str);
-      curr->next;
-    }
-    printf("\n");
-  }
-  
 }
 
 
